@@ -9,59 +9,66 @@
 <body>
     <header class="container-header">
         <div class="content">
-            <div class="logo">
-                <img src="./img/logo.png" alt="logo">
-            </div>
+            <a href="index.html" class="logo">
+                <img src="./img/logo.png" alt="TopZone">
+            </a>
             <ul class="header-menu">
-                <li>iPhone</li>
-                <li>Mac</li>
-                <li>iPad</li>
-                <li>Watch</li>
-                <li>Âm thanh</li>
-                <li>Phụ kiện</li>
-                <li>TekZone</li>
-                <li>TopCare</li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="watch.html">Watch</a></li>
+                <li><a href="am-thanh.html">Âm thanh</a></li>
+                <li><a href="phu-kien.html">Phụ kiện</a></li>
+                <li><a href="tekzone.html">TekZone</a></li>
+                <li><a href="topcare.html">TopCare</a></li>
             </ul>
             <div class="icon-header">
                 <div class="search">
                     <img src="./img/search.jpg" alt="search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
                 </div>
-                <div class="cart">
-                    <img src="./img/cart.jpg" alt="cart"> 
-                </div>
+                <a href="login.html" class="cart-link">
+                    <div class="cart">
+                        <img src="./img/cart.jpg" alt="cart">
+                    </div>
+                </a>
             </div>
         </div>
     </header>
     <section class="qc">
-        <img src="./img/qc.png" alt="qc">
+        <div class="qc-slider">
+            <img src="./img/qc.png" alt="qc">
+            <button class="qc-arrow qc-prev" aria-label="Previous slide">&#10094;</button>
+            <button class="qc-arrow qc-next" aria-label="Next slide">&#10095;</button>
+        </div>
     </section>
     <section class="container">
         <div class="all">
             <div class="main-item">
-                <div class="item">
+                <a href="iphone.html" class="item">
                     <img src="./img/m1.png" alt="">
                     <p>iPhone</p>
-                </div>
-                <div class="item">
+                </a>
+                <a href="mac.html" class="item">
                     <img src="./img/m2.png" alt="">
                     <p>Mac</p>
-                </div>
-                <div class="item">
+                </a>
+                <a href="ipad.html" class="item">
                     <img src="./img/m3.png" alt="">
                     <p>iPad</p>
-                </div>
-                <div class="item">
+                </a>
+                <a href="watch.html" class="item">
                     <img src="./img/m4.png" alt="">
                     <p>Watch</p>
-                </div>
-                <div class="item">
+                </a>
+                <a href="am-thanh.html" class="item">
                     <img src="./img/m5.png" alt="">
                     <p>Âm thanh</p>
-                </div>
-                <div class="item">
+                </a>
+                <a href="phu-kien.html" class="item">
                     <img src="./img/m6.png" alt="">
                     <p>Phụ kiện</p>
-                </div>
+                </a>
             </div>
 
             <!-- iphone -->
@@ -97,7 +104,7 @@
                     </li>
                     <li>
                         <img src="./img/ip4.png" alt="">
-                        <p>iPhone Air 256GBGB</p>
+                        <p>iPhone Air 256GB</p>
                         <span>
                             <strong>22.990.000₫</strong>
                             <strike>31.990.000₫</strike>
@@ -236,6 +243,16 @@
             <div class="page">
                 <div class="province">
                     <p>Mở bán tại 85 cửa hàng</p>
+                    <div class="city-select">
+                        <select>
+                            <option value="">Chọn tỉnh thành</option>
+                            <option value="hn">Hà Nội</option>
+                            <option value="hcm">Hồ Chí Minh</option>
+                            <option value="dn">Đà Nẵng</option>
+                            <option value="hp">Hải Phòng</option>
+                            <option value="dnk">Đồng Nai</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="store">
                     <div class="item">
@@ -324,11 +341,13 @@
         </div>
     </section>
     <footer>
+        <div class="logo-footer-wrapper">
+            <div class="logo-foot">
+                <img src="./img/logo.png" alt="TopZone Logo">
+            </div>
+        </div>
         <div class="foot">
             <li class="foot-col">
-                <div class="logo-foot">
-                    <img src="./img/logo.png" alt="TopZone Logo">
-                </div>
                 <h4>Tổng đài</h4>
                 <ul class="contact-info">
                     <li>Mua hàng: <span class="text-blue">1900.9696.42</span> (8:00 - 21:30)</li>
